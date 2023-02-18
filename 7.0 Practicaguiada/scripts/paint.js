@@ -7,7 +7,6 @@ const professors = [];
 
 const paintCard = (typ)=>{
 
-    typ = typ.toUpperCase();
     const fragment = document.createDocumentFragment();
     const templateStudent = document.querySelector('#templateEstudiante').content;
     const templateProfesor = document.querySelector('#templateProfesor').content;
@@ -21,6 +20,7 @@ const paintCard = (typ)=>{
             cloneTemp.querySelector('.text-aprobado').innerHTML = `${checkAvg(i.prom)}`;
             fragment.appendChild(cloneTemp);
         }
+
     }else{
         if(typ === 'profesor'){
             for(let i of professors){
@@ -31,9 +31,9 @@ const paintCard = (typ)=>{
                 fragment.appendChild(cloneTemp);
             }
         }
-    cardE.appendChild(fragment);
     cardP.appendChild(fragment);
     }
+    cardE.appendChild(fragment);
 };
 const addStudent = (name, lastNme, avg)=>{
     //Objeto literal de JS

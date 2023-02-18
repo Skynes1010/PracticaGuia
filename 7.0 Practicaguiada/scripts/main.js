@@ -1,7 +1,7 @@
 import { validateString, vAvg, checkAvg } from "./validate.js";
-import {paintCard, addStudent, modalAlert} from "./paint.js";
+import {paintCard, addStudent, addProfessor, modalAlert} from "./paint.js";
 
-let currentType = {name: ""}
+let currentType = {name: ""} //estado profesor o estudiante
 const select = document.getElementById('opcion');
 const btnAgregar = document.getElementById('btnAgregar');
 const btnMostrar = document.getElementById('btnMostrar');
@@ -42,7 +42,7 @@ btnAgregar.onclick = function(){
     const lastname = document.getElementById('apellido').value;
     const avg = document.getElementById('promedio').value;  //obtiene valor
     const op = document.getElementById('opcion').value;
-    currentType["name"] = op;
+    currentType["name"] = op; //Se guarda el valor de estudiante o profesor
     const profesion = document.getElementById('profesion').value;
     
 
@@ -70,6 +70,6 @@ btnAgregar.onclick = function(){
 } 
 
 btnMostrar.addEventListener("click", function(){
-    paintCard(currentType.name);
+    paintCard(currentType.name); //valor actual de estudiante profe y imprime
 });
 

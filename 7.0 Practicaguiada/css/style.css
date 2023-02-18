@@ -131,6 +131,20 @@ body{
 
 }
 
+.card .text-profesion{
+
+    font-size: 20px;
+    color: orange;
+
+}
+
+.card .text-profesion{
+
+    font-size: 24px;
+    padding: 2% 0;
+
+}
+
 .card .btnRegistrar{
     background: #f2db63;
     background: linear-gradient(to right top, #6dec77, #77e162, #80d64d, #88cb37, #8ec01e);
