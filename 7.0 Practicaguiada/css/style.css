@@ -1,0 +1,225 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    font-family: 'Josefin Sans', sans-serif;
+    background-attachment: fixed;
+}
+
+.header{
+
+    background: #f25757;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,217,69,1) 0%, rgba(24,216,162,1) 58%, rgba(0,212,255,1) 100%);
+    height: 400px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+.header > img{
+
+    width: 30%;
+    height: 200px;
+    margin-top: 3%;
+}
+
+.ola{
+
+    position: absolute;
+    bottom: 0; 
+    width: 100vw;
+
+}
+
+.form{
+
+    width: 50%;
+    height: auto;
+    margin: 5% auto;    
+    border-radius: 15px;
+    border: 4px solid greenyellow;
+    padding: 25px 10px ;
+    text-align: center;
+    
+}
+
+.form > input, label, button, select{
+
+    display: inline-block;
+    width: 70%;
+    margin: 3% 0%;
+    font-size: 20px;
+    
+}
+
+.form > input{
+
+    padding: 10px 2px;
+    border: none;
+    border-bottom: 1px solid aqua;
+    outline: none;
+
+}
+.form > label{
+
+    text-align: left;
+    padding: 5px;
+
+}
+
+.control-s{
+    margin-top: 2%;
+    border: 2px solid aqua;
+    padding: 10px;
+
+}
+
+.btn{
+
+    background:wheat;
+    background: linear-gradient(to right top, #6dec77, #77e162, #80d64d, #88cb37, #8ec01e);
+    border-radius: 30px;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover{
+
+    background-color: yellow;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,217,69,1) 0%, rgba(24,216,162,1) 58%, rgba(0,212,255,1) 100%);
+    text-decoration: none;
+
+}
+
+.card{
+
+    width: 50%;
+    margin: 5% auto;
+    border: 3px solid greenyellow;
+    text-align: center;
+
+}
+
+.title-card{
+
+    padding: 3%;
+
+}
+
+.card .text-promedio{
+
+    font-size: 20px;
+    color: orange;
+
+}
+
+.card .text-aprobado{
+
+    font-size: 24px;
+    padding: 2% 0;
+
+}
+
+.card .btnRegistrar{
+    background: #f2db63;
+    background: linear-gradient(to right top, #6dec77, #77e162, #80d64d, #88cb37, #8ec01e);
+    border-radius: 24px;
+    padding: 2%;
+    color: #fff;
+    border: 2px solid #000;
+}
+
+.alerta{
+
+    width: 25%;
+    height: 15%;
+    background-color: #f25757;
+    position: fixed;
+    top: 35%;
+    left: 38%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 5%;
+    border: 2px solid #000;
+
+}
+
+.alerta2{
+
+    width: 25%;
+    height: 15%;
+    background-color: yellowgreen;
+    position: fixed;
+    top: 35%;
+    left: 38%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10%;
+    border: 2px solid #3C3D59;
+
+}
+
+
+
+.textAlerta{
+
+    width: 100%;
+    margin-top: 10%;
+    color: #fff;
+
+}
+
+.close{
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+@media screen and (max-width: 760px){
+    
+    .form{
+        width: 60%;
+        margin: 2% auto;
+        border: 2px solid blueviolet;
+        padding: 15px 5px;
+        
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .form{
+        width: 70%;
+        margin: 2% auto;
+        border: 2px solid green;
+        padding: 15px 5px;
+        
+    }
+    .form > input, label, button, select{
+
+        margin: 2% 0;
+        font-size: 16px;
+
+    }
+
+    .btn{
+
+        font-size: 16px;
+    }
+}
